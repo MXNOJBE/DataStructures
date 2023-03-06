@@ -34,7 +34,6 @@ void infixToPostfix(char infix[], char postfix[])
 {
     int i = 0, j = 0;
     char x;
-
     push('(');
     strcat(infix, ")");
 
@@ -105,6 +104,7 @@ int main()
         printf("Any other input is wrong choice\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
+
         switch (ch)
         {
         case 1:
@@ -115,6 +115,7 @@ int main()
         case 2:
             printf("Infix Expression: %s\n", infix);
             infixToPostfix(infix, postfix);
+            isalnum();
             printf("Postfix expression: %s\n", postfix);
             break;
         case 3:
