@@ -1,2 +1,2 @@
 
-        case 1:
+    int exactnum = strlen(n) - strlen(m);
